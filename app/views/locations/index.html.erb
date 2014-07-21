@@ -1,0 +1,22 @@
+<html>
+<head>
+	
+</head>
+
+<body>
+
+
+	<h1>Hell yeah, Those are LOCATIONS!</h1>
+
+	<%  @locations.each do |location| %>
+
+
+	<li><%= location.name%>
+		<% unless location.country==nil %> 
+		-	<%= location.country %>
+		<% end %>
+	</li>
+	<% end %>
+
+</body>
+</html>

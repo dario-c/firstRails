@@ -10,6 +10,6 @@ Location.create name: 'Home', city:'Barcelona', country:"Spain", zip_code: 90210
 Location.create name: 'Chiringito', city:'Barcelona', country:"Spain", zip_code: 90210, description: "A description of Chiringito"
 Location.create name: 'Pub', city:'Barcelona', country:"Spain", zip_code: 90210, description: "A description of Pub"
 Location.create name: 'Bar', city:'Barcelona', country:"Spain", zip_code: 90210, description: "A description of Bar"
-Location.create name: 'Batcave', city:'Barcelona', country:"Spain", zip_code: 90210, description: "A description of Batcave"
+Location.create name: 'Batcave', city:'ShutUpCat', zip_code: 90210, description: "A description of Batcave"
 
 
