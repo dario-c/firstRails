@@ -1,0 +1,18 @@
+<html>
+<head>
+	
+</head>
+
+<body>
+
+
+	<h1>Hell yeah, Those are visits!</h1>
+
+	<%  @visits.each do |visit| %>
+
+	<% hisLoc = Location.find(visit.location_id).name %>
+	<li><%= visit.user%> - <%=hisLoc%></li>
+	<% end %>
+
+</body>
+</html>

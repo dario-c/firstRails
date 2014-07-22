@@ -13,6 +13,10 @@ Rails.application.routes.draw do
   get 'locations/:id' => 'locations#show'
   get 'contact' => 'home#contact'
 
+  get 'visits' => 'visit#index'
+  get 'locations/:id/visits/:id' => 'visit#multindex'
+
+
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
