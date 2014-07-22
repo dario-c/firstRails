@@ -26,13 +26,15 @@ RSpec.describe LocationsController, :type => :controller do
 			var = Location.create
 			get :show, id:var.id
 			expect(response).to have_http_status(:ok)
-
 		end
 
+		it "Returns Success" do
+			var = Location.create
+			get :show, id:2000
+			expect(response).to have_http_status(404)
+		end
 		
 	end
-
-
 
 
 end
