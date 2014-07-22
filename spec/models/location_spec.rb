@@ -5,19 +5,15 @@ RSpec.describe Location, :type => :model do
 
 	describe "#find_iron works the same as #find" do 
 
-
+	Location.create(name:"Test",city:"Guanajuato")
+	Location.create(name:"Test2",city:"Panama")
 
 		it "Is the same value" do
-			Location.create(name:"Test",city:"Guanajuato")
-			Location.create(name:"Test2",city:"Panama")
 				expect(Location.find(2)).to eq(Location.iron_find(2))
 		end
 
-		it "shows the last 10 elements" do 
-			Location.create(name:"Test",city:"Guanajuato")
-			Location.create(name:"Test2",city:"Panama")
-
-			expect(Location.last_created(3).count).to eq(2)
+		it "Can filter places in Spain" do
+				expect(Location.in_spain?).to eq([])
 		end
 	end
 end
